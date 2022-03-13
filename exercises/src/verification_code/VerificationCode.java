@@ -1,4 +1,4 @@
-package Verification_Code;
+package verification_code;
 
 import java.util.Random;
 
