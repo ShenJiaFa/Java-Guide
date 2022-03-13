@@ -1,2 +1,13 @@
 # Classic-JavaSE-Exercises
-This is a collection of classic java se small cases, including some classic java introductory programming cases, including:  Number of daffodils;  Mount Qomolangma;  Number guessing game;  Buy air tickets;  Find prime numbers;  Create verification code;  Scoring by judges;  Digital encryption;  Development of two-color ball system;  ......  It can be used for small partners who are learning javase to practice. At the same time, you are also welcome to give me some improvement suggestions. If the use experience is good, please give me star!
+This is a collection of classic JavaSE demos,including:
+Number of daffodils;
+Paper fold;
+Number guessing game;
+Buy air tickets;
+Find prime numbers;
+Create verification code;
+Scoring by judges;
+Digital encryption;
+Development of two-color ball system;
+...and so on;
+It can be used for all of partners who are learning JavaSE,if you have any suggestions for improvement,you can give them to me,and if the use experience is good, please give me a star,thank you!
