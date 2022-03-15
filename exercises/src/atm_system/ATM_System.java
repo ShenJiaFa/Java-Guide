@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * function: Create an ATM startup class
- * <p>
+ *
  * Author: ShenJiaFa
  * Since: 2022/3/13-16:05
  */
@@ -61,7 +61,7 @@ public class ATM_System {
                     String pwd = sc.next();
                     if (pwd.equals(accounts.get(getIndexofAccount(input, accounts)).getPassword())) {
                         System.out.println("Login succeeded! Your card id is" + input);
-                        userOption(accounts.get(index), sc);
+                        userOption(accounts.get(index), accounts, sc);
                         return;
                     } else {
                         System.out.println("Password error,retry!");
@@ -73,8 +73,7 @@ public class ATM_System {
         }
     }
 
-    private static void userOption(Account account, Scanner sc) {
-
+    private static void userOption(Account account, List<Account> accounts, Scanner sc) {
         while (true) {
             System.out.println("===========Options===========");
             System.out.println("1.Query account info");
@@ -99,10 +98,10 @@ public class ATM_System {
                     withdraw(account, sc);
                     break;
                 case 4:
-
+                    transfer(account, accounts, sc);
                     break;
                 case 5:
-
+                    updatePassword(account, sc);
                     break;
                 case 6:
                     System.out.println("Thanks for using, see you next time!");
@@ -110,6 +109,77 @@ public class ATM_System {
                 case 7:
                     break;
                 default:
+            }
+        }
+    }
+
+    /**
+     * Update password method
+     * @param account User account
+     * @param sc Scanner
+     */
+    private static void updatePassword(Account account, Scanner sc) {
+        System.out.println("===========Update PWD===========");
+        System.out.println("Please enter your password:");
+        String input=sc.next();
+    }
+
+    /**
+     * Transfer money method
+     *
+     * @param account User account
+     * @param sc      Scanner
+     */
+    private static void transfer(Account account, List<Account> accounts, Scanner sc) {
+
+        //guard clause
+        if (accounts.size() < 2 || account.getBalance() == 0) {
+            System.out.println("Insufficient number or balance of your accounts, unable to transfer");
+            return;
+        }
+        while (true) {
+            //Start transfer operation
+            System.out.println("Please enter the payee card id");
+            String payeeCardId = sc.next();
+            //Judge the input
+            if (payeeCardId == account.getCardId()) {
+                System.out.println("Input error,please enter the payee card id,not yours");
+                continue;
+            } else {
+                Integer index = getIndexofAccount(payeeCardId, accounts);
+                if (null == index) {
+                    System.out.println("Payee account does not exist, please re-enter");
+                    continue;
+                } else {
+                    while (true) {
+                        System.out.println("Please enter the payee's last name");
+                        String lastName = sc.next();
+                        if (lastName.equals(accounts.get(index).getUserName().charAt(0) + "")) {
+                            System.out.println("Verification passed");
+                            while (true) {
+                                System.out.println("Please enter the transfer amount:");
+                                double money = sc.nextDouble();
+                                if (money <= 0) {
+                                    System.out.println("Amount input error, please re-enter");
+                                    continue;
+                                } else {
+                                    if (money > account.getBalance()) {
+                                        System.out.println("Insufficient Balance!");
+                                        continue;
+                                    }
+                                    account.setBalance(account.getBalance() - money);
+                                    Account payeeAccount = accounts.get(index);
+                                    payeeAccount.setBalance(payeeAccount.getBalance() + money);
+                                    System.out.println("Transfer succeeded!");
+                                    showAccount(account);
+                                    return;
+                                }
+                            }
+                        } else {
+                            System.out.println("Authentication failed!");
+                        }
+                    }
+                }
             }
         }
     }
@@ -229,9 +299,9 @@ public class ATM_System {
     /**
      * Get the corresponding index of account by card id
      *
-     * @param id
-     * @param accounts
-     * @return
+     * @param id       User card id
+     * @param accounts User account
+     * @return The index of corresponding account
      */
     private static Integer getIndexofAccount(String id, List<Account> accounts) {
         for (int i = 0; i < accounts.size(); i++) {
