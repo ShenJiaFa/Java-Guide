@@ -102,11 +102,12 @@ public class ATM_System {
                     break;
                 case 5:
                     updatePassword(account, sc);
-                    break;
+                    return;
                 case 6:
                     System.out.println("Thanks for using, see you next time!");
                     return;
                 case 7:
+                    cancelAccount(account,accounts,sc);
                     break;
                 default:
             }
@@ -114,14 +115,60 @@ public class ATM_System {
     }
 
     /**
-     * Update password method
-     * @param account User account
+     *
+     * @param account User Account
+     * @param accounts User Acounts
      * @param sc Scanner
+     */
+    private static void cancelAccount(Account account,List<Account> accounts,Scanner sc) {
+        System.out.println("===========Cancel Account===========");
+        System.out.println("Are you sure you want to cancel your account? Y/N");
+        String cmd=sc.next();
+        switch(cmd){
+            case "Y":
+                if(account.getBalance()>=0){
+                    System.out.println("Your account still has balance and cannot be cancelled");
+                }else{
+                    int userIndex=getIndexofAccount(account.getCardId(), accounts);
+                    accounts.remove(userIndex);
+                    System.out.println("Account cancellation completed");
+                    return;
+                }
+            default:
+                System.out.println("Cancellation of account cancellation!");
+                return;
+        }
+    }
+
+    /**
+     * Update password method
+     *
+     * @param account User account
+     * @param sc      Scanner
      */
     private static void updatePassword(Account account, Scanner sc) {
         System.out.println("===========Update PWD===========");
         System.out.println("Please enter your password:");
-        String input=sc.next();
+        while (true) {
+            String inputOldPassword = sc.next();
+            if (inputOldPassword.equals(account.getPassword())) {
+                while (true) {
+                    System.out.println("Please enter your new password");
+                    String newPassword = sc.next();
+                    System.out.println("Please re-enter your new password again");
+                    String newPasswordAgain = sc.next();
+                    if (newPassword.equals(newPasswordAgain)) {
+                        account.setPassword(newPassword);
+                        System.out.println("Update Success!");
+                        return;
+                    } else {
+                        System.out.println("Inequality!Restart set password");
+                    }
+                }
+            } else {
+                System.out.println("Wrong password! Please re-renter:");
+            }
+        }
     }
 
     /**
