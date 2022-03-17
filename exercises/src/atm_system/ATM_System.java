@@ -48,7 +48,7 @@ public class ATM_System {
         System.out.println("===========Sign In===========");
         //If the system does not have an account, the login must fail
         if (accounts.size() == 0) {
-            System.out.println("There is no user data in the system at present, please operate after register an account");
+            System.out.println("There is no user data in the system at present, please operate after register an account!");
             return;
         }
         while (true) {
@@ -60,7 +60,7 @@ public class ATM_System {
                     System.out.println("Please enter the corresponding password:");
                     String pwd = sc.next();
                     if (pwd.equals(accounts.get(getIndexofAccount(input, accounts)).getPassword())) {
-                        System.out.println("Login succeeded! Your card id is" + input);
+                        System.out.println("Login succeeded! Your card id is: " + input);
                         userOption(accounts.get(index), accounts, sc);
                         return;
                     } else {
@@ -68,7 +68,7 @@ public class ATM_System {
                     }
                 }
             } else {
-                System.out.println("There is no information about this user in the system, please re-enter");
+                System.out.println("There is no information about this user in the system, please re-enter...");
             }
         }
     }
@@ -83,15 +83,13 @@ public class ATM_System {
             System.out.println("5.Change Password");
             System.out.println("6.sign out");
             System.out.println("7.Account cancellation");
-            System.out.println("Please enter your options:");
+            System.out.println("Please enter your option:");
             int cmd = sc.nextInt();
             switch (cmd) {
                 case 1:
-                    //Show current User information
                     showAccount(account);
                     break;
                 case 2:
-                    //Deposit method
                     deposit(account, sc);
                     break;
                 case 3:
@@ -107,9 +105,9 @@ public class ATM_System {
                     System.out.println("Thanks for using, see you next time!");
                     return;
                 case 7:
-                    if(cancelAccount(account,accounts,sc)){
+                    if (cancelAccount(account, accounts, sc)) {
                         return;
-                    }else {
+                    } else {
                         break;
                     }
                 default:
@@ -125,18 +123,18 @@ public class ATM_System {
      */
     private static boolean cancelAccount(Account account, List<Account> accounts, Scanner sc) {
         System.out.println("===========Cancel Account===========");
-        System.out.println("Are you sure you want to cancel your account? Enter the letter Y to confirm");
+        System.out.println("Are you sure you want to cancel your account? Enter letter Y to confirm:");
         String cmd = sc.next();
         switch (cmd) {
             case "y":
             case "Y":
                 if (account.getBalance() > 0) {
-                    System.out.println("Your account still has balance and cannot be cancelled");
+                    System.out.println("Your account still has balance and cannot be cancelled!");
                     break;
                 } else {
                     int userIndex = getIndexofAccount(account.getCardId(), accounts);
                     accounts.remove(userIndex);
-                    System.out.println("Account cancellation completed");
+                    System.out.println("Account cancellation completed!");
                     return true;
                 }
             default:
@@ -159,16 +157,16 @@ public class ATM_System {
             String inputOldPassword = sc.next();
             if (inputOldPassword.equals(account.getPassword())) {
                 while (true) {
-                    System.out.println("Please enter your new password");
+                    System.out.println("Please enter your new password:");
                     String newPassword = sc.next();
-                    System.out.println("Please re-enter your new password again");
+                    System.out.println("Please re-enter your new password again:");
                     String newPasswordAgain = sc.next();
                     if (newPassword.equals(newPasswordAgain)) {
                         account.setPassword(newPassword);
                         System.out.println("Update Success!");
                         return;
                     } else {
-                        System.out.println("Inequality!Restart set password");
+                        System.out.println("Inequality!Restart set password...");
                     }
                 }
             } else {
@@ -188,33 +186,33 @@ public class ATM_System {
 
         //guard clause
         if (accounts.size() < 2 || account.getBalance() == 0) {
-            System.out.println("Insufficient number or balance of your accounts, unable to transfer");
+            System.out.println("Insufficient number or balance of your accounts, unable to transfer!");
             return;
         }
         while (true) {
             //Start transfer operation
-            System.out.println("Please enter the payee card id");
+            System.out.println("Please enter the payee card id:");
             String payeeCardId = sc.next();
             //Judge the input
             if (payeeCardId == account.getCardId()) {
-                System.out.println("Input error,please enter the payee card id,not yours");
+                System.out.println("Input error,please enter the payee card id,not yours!");
                 continue;
             } else {
                 Integer index = getIndexofAccount(payeeCardId, accounts);
                 if (null == index) {
-                    System.out.println("Payee account does not exist, please re-enter");
+                    System.out.println("Payee account does not exist, please re-enter:");
                     continue;
                 } else {
                     while (true) {
-                        System.out.println("Please enter the payee's last name");
+                        System.out.println("Please enter the payee's last name:");
                         String lastName = sc.next();
                         if (lastName.equals(accounts.get(index).getUserName().charAt(0) + "")) {
-                            System.out.println("Verification passed");
+                            System.out.println("Verification passed!");
                             while (true) {
                                 System.out.println("Please enter the transfer amount:");
                                 double money = sc.nextDouble();
                                 if (money <= 0) {
-                                    System.out.println("Amount input error, please re-enter");
+                                    System.out.println("Amount input error, please re-enter...");
                                     continue;
                                 } else {
                                     if (money > account.getBalance()) {
@@ -248,14 +246,14 @@ public class ATM_System {
         while (true) {
             //guard clause
             if (account.getBalance() < 100) {
-                System.out.println("Your balance is too small. Please deposit it first");
+                System.out.println("Your balance is too small. Please deposit it first!");
                 return;
             }
             System.out.println("===========Deposit===========");
             System.out.println("Please enter your withdraw amount:");
             double amount = sc.nextDouble();
             if (amount > account.getQuota()) {
-                System.out.println("Exceed quota! Please retry");
+                System.out.println("Exceed quota! Please retry...");
             } else {
                 if (account.getBalance() - amount >= 0) {
                     account.setBalance(account.getBalance() - amount);
@@ -277,10 +275,10 @@ public class ATM_System {
      */
     private static void deposit(Account account, Scanner sc) {
         System.out.println("===========Deposit===========");
-        System.out.println("Please enter your deposit amount");
+        System.out.println("Please enter your deposit amount:");
         double amount = sc.nextDouble();
         account.setBalance(account.getBalance() + amount);
-        System.out.println("Deposit success! Your current balance is ");
+        System.out.println("Deposit success! Your current balance is:");
         showAccount(account);
     }
 
@@ -318,7 +316,7 @@ public class ATM_System {
                 account.setPassword(pwd);
                 break;
             } else {
-                System.out.println("Inequality!Restart set password");
+                System.out.println("Inequality!Restart set password...");
             }
         }
         System.out.println("Please enter your quota:");
@@ -327,7 +325,7 @@ public class ATM_System {
         String cardId = getRandomCardId(accounts);
         account.setCardId(cardId);
         accounts.add(account);
-        System.out.println("register success! Your card ID is " + cardId);
+        System.out.println("register success! Your card ID is: " + cardId);
     }
 
     /**
