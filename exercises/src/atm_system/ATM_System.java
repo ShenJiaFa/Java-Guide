@@ -107,37 +107,43 @@ public class ATM_System {
                     System.out.println("Thanks for using, see you next time!");
                     return;
                 case 7:
-                    cancelAccount(account,accounts,sc);
-                    break;
+                    if(cancelAccount(account,accounts,sc)){
+                        return;
+                    }else {
+                        break;
+                    }
                 default:
+                    System.out.println("Nonexistent operation! Please re-enter:");
             }
         }
     }
 
     /**
-     *
-     * @param account User Account
-     * @param accounts User Acounts
-     * @param sc Scanner
+     * @param account  User Account
+     * @param accounts Accounts info
+     * @param sc       Scanner
      */
-    private static void cancelAccount(Account account,List<Account> accounts,Scanner sc) {
+    private static boolean cancelAccount(Account account, List<Account> accounts, Scanner sc) {
         System.out.println("===========Cancel Account===========");
-        System.out.println("Are you sure you want to cancel your account? Y/N");
-        String cmd=sc.next();
-        switch(cmd){
+        System.out.println("Are you sure you want to cancel your account? Enter the letter Y to confirm");
+        String cmd = sc.next();
+        switch (cmd) {
+            case "y":
             case "Y":
-                if(account.getBalance()>=0){
+                if (account.getBalance() > 0) {
                     System.out.println("Your account still has balance and cannot be cancelled");
-                }else{
-                    int userIndex=getIndexofAccount(account.getCardId(), accounts);
+                    break;
+                } else {
+                    int userIndex = getIndexofAccount(account.getCardId(), accounts);
                     accounts.remove(userIndex);
                     System.out.println("Account cancellation completed");
-                    return;
+                    return true;
                 }
             default:
                 System.out.println("Cancellation of account cancellation!");
-                return;
+                break;
         }
+        return false;
     }
 
     /**
@@ -174,8 +180,9 @@ public class ATM_System {
     /**
      * Transfer money method
      *
-     * @param account User account
-     * @param sc      Scanner
+     * @param account  User account
+     * @param accounts Accounts info
+     * @param sc       Scanner
      */
     private static void transfer(Account account, List<Account> accounts, Scanner sc) {
 
@@ -280,7 +287,7 @@ public class ATM_System {
     /**
      * Show current user information
      *
-     * @param account current user account
+     * @param account user account
      */
     private static void showAccount(Account account) {
         System.out.println("===========User Info===========");
@@ -293,7 +300,7 @@ public class ATM_System {
     /**
      * User registration function
      *
-     * @param accounts Account information
+     * @param accounts Accounts information
      * @param sc       scanner
      */
     private static void register(List<Account> accounts, Scanner sc) throws InterruptedException {
@@ -326,6 +333,7 @@ public class ATM_System {
     /**
      * Generate ID method
      *
+     * @param accounts
      * @return User card id
      */
     private static String getRandomCardId(List<Account> accounts) {
