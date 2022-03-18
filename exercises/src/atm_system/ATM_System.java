@@ -87,24 +87,31 @@ public class ATM_System {
             int cmd = sc.nextInt();
             switch (cmd) {
                 case 1:
+                    //Show user's account
                     showAccount(account);
                     break;
                 case 2:
+                    //User deposit
                     deposit(account, sc);
                     break;
                 case 3:
+                    //User withdraw
                     withdraw(account, sc);
                     break;
                 case 4:
+                    //User transfer
                     transfer(account, accounts, sc);
                     break;
                 case 5:
+                    //User update password
                     updatePassword(account, sc);
                     return;
                 case 6:
-                    System.out.println("Thanks for using, see you next time!");
+                    //User sign out
+                    signOut();
                     return;
                 case 7:
+                    //User account cancellation
                     if (cancelAccount(account, accounts, sc)) {
                         return;
                     } else {
@@ -114,6 +121,13 @@ public class ATM_System {
                     System.out.println("Nonexistent operation! Please re-enter:");
             }
         }
+    }
+
+    /**
+     * User sign out
+     */
+    private static void signOut() {
+        System.out.println("Thanks for using, see you next time!");
     }
 
     /**
@@ -154,8 +168,8 @@ public class ATM_System {
         System.out.println("===========Update PWD===========");
         System.out.println("Please enter your password:");
         while (true) {
-            String inputOldPassword = sc.next();
-            if (inputOldPassword.equals(account.getPassword())) {
+            String oldPasswordInput = sc.next();
+            if (oldPasswordInput.equals(account.getPassword())) {
                 while (true) {
                     System.out.println("Please enter your new password:");
                     String newPassword = sc.next();
