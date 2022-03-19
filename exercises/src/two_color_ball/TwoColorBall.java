@@ -6,8 +6,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * function: Simulated two-color ball lottery
- * <p>
+ * Function: Simulated two-color ball lottery
+ *
  * Author: ShenJiaFa
  * Since: 2022/3/13-13:15
  */

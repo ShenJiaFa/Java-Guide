@@ -3,8 +3,8 @@ package verification_code;
 import java.util.Random;
 
 /**
- * function: Generate verification code
- * <p>
+ * Function: Generate verification code
+ *
  * Author: ShenJiaFa
  * Since: 2022/3/13-13:02
  */

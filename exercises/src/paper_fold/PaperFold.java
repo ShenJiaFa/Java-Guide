@@ -1,8 +1,8 @@
 package paper_fold;
 
 /**
- * function: Calculate the fold times
- * <p>
+ * Function: Calculate the fold times
+ *
  * Author: ShenJiaFa
  * Since: 2022/3/13-12:07
  */

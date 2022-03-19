@@ -6,12 +6,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * function: Create an ATM startup class
+ * Function: Create an ATM startup class
  *
  * Author: ShenJiaFa
  * Since: 2022/3/13-16:05
  */
-public class ATM_System {
+public class ATMSystem {
     public static void main(String[] args) throws InterruptedException {
         //First create a container to facilitate the operation of the model class
         ArrayList<Account> accounts = new ArrayList<>();
@@ -131,6 +131,8 @@ public class ATM_System {
     }
 
     /**
+     * Account cancellation
+     *
      * @param account  User Account
      * @param accounts Accounts info
      * @param sc       Scanner

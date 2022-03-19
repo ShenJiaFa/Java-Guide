@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * function: Screen score blow 80
+ * Function: Screen score blow 80
  *
  * Author: ShenJiaFa
  * Since: 2022/3/13-13:45

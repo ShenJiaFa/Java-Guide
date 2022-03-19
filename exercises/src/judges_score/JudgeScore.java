@@ -1,8 +1,8 @@
 package judges_score;
 
 /**
- * function: Judges score
- * <p>
+ * Function: Judges score
+ *
  * Author: ShenJiaFa
  * Since: 2022/3/13-13:07
  */

@@ -3,8 +3,8 @@ package guess_number;
 import java.util.Scanner;
 
 /**
- * function: Guess the value of the number
- * <p>
+ * Function: Guess the value of the number
+ *
  * Author: ShenJiaFa
  * Since: 2022/3/13-12:16
  */

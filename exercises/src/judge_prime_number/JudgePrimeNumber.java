@@ -1,8 +1,8 @@
 package judge_prime_number;
 
 /**
- * function: Judge whether a number is prime
- * <p>
+ * Function: Judge whether a number is prime
+ *
  * Author: ShenJiaFa
  * Since: 2022/3/13-12:53
  */

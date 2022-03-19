@@ -1,8 +1,8 @@
 package narcissistic_number;
 
 /**
- * function: Find narcissistic number
- * <p>
+ * Function: Find narcissistic number
+ *
  * Author: shenjiafa
  * Since: 2022/3/13-11:18
  */

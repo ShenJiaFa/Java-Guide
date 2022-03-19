@@ -1,7 +1,7 @@
 package atm_system;
 
 /**
- * function: Create an account class to hold user information
+ * Function: Create an account class to hold user information
  *
  * Author: ShenJiaFa
  * Since: 2022/3/13-15:55

@@ -1,8 +1,8 @@
 package airline_ticket;
 
 /**
- * function: Calculate the ticket price
- * <p>
+ * Function: Calculate the ticket price
+ *
  * Author: ShenJiaFa
  * Since: 2022/3/13-12:43
  */
