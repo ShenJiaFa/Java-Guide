@@ -1,4 +1,4 @@
-package Generate_playing_cards;
+package generate_playing_cards;
 
 import java.util.ArrayList;
 import java.util.List;
