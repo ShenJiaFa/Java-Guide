@@ -6,7 +6,7 @@ package create_array_utils;
  * Author: ShenJiaFa
  * Since: 2022/3/19-15:15
  */
-public class ArraysUtils {
+public final class ArraysUtils {
 
     /**
      * Constructor privatization
