@@ -20,6 +20,11 @@ public class LazySingleton {
 
     }
 
+    /**
+     * Get instance
+     *
+     * @return Instance
+     */
     public static LazySingleton getInstance() {
         if (instance == null) {
             instance = new LazySingleton();
