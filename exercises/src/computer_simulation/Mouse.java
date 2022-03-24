@@ -15,12 +15,12 @@ public class Mouse implements USB{
 
     @Override
     public void plugIn() {
-        System.out.println(name+" can be plugged into a computer via USB;");
+        System.out.println(name+" is plugged into computer;");
     }
 
     @Override
     public void unplug() {
-        System.out.println(name+" can be unplugged from the computer via USB;");
+        System.out.println(name+" is unplugged from the computer;");
     }
 
     public Mouse() {
@@ -42,6 +42,6 @@ public class Mouse implements USB{
      * Mouse can be clicked
      */
     public void click(){
-        System.out.println(name+" can be clicked;");
+        System.out.println(name+" is clicking;");
     }
 }

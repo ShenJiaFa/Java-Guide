@@ -29,18 +29,18 @@ public class Keyboard implements USB{
 
     @Override
     public void plugIn() {
-        System.out.println(name+" can be plugged into a computer via USB;");
+        System.out.println(name+" is plugged into computer;");
     }
 
     @Override
     public void unplug() {
-        System.out.println(name+" can be unplugged from the computer via USB;");
+        System.out.println(name+" is unplugged from the computer;");
     }
 
     /**
      * Keyboard input method
      */
     public void typeIn(){
-        System.out.println(name+" can be used for typing;");
+        System.out.println(name+" is typing;");
     }
 }
