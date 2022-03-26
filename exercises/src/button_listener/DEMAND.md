@@ -1,3 +1,3 @@
 # Demand
 
-Bind button listener events;
+Bind a listener event to the button;
