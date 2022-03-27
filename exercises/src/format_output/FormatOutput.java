@@ -17,6 +17,12 @@ public class FormatOutput {
         System.out.println(toString(array));
     }
 
+    /**
+     * Format array method
+     *
+     * @param array Array
+     * @return Format output
+     */
     public static String toString(int[] array) {
 
         if (Objects.equals(array, null)) {
