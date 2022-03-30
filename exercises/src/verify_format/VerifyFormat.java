@@ -18,9 +18,14 @@ public class VerifyFormat {
         // telephone number
         String tel = "025-888888";
 
-        System.out.println(verifyPhone(phone));
-        System.out.println(verifyEmail(email));
-        System.out.println(verifyTel(tel));
+        // QQ number
+        String qq = "100001";
+
+        // print verify result
+        System.out.println("The result of verifying the phone number is"+verifyPhone(phone));
+        System.out.println("The result of verifying the email address is"+verifyEmail(email));
+        System.out.println("The result of verifying the telephone number is"+verifyTel(tel));
+        System.out.println("The result of verifying the QQ number is"+verifyQQ(qq));
     }
 
     /**
@@ -54,5 +59,15 @@ public class VerifyFormat {
     private static boolean verifyPhone(String phone) {
 
         return phone.matches("1[3-9]\\d{9}");
+    }
+
+    /**
+     * Verify qq number
+     *
+     * @param qq QQ number
+     * @return Verify result
+     */
+    private static boolean verifyQQ(String qq) {
+        return qq.matches("[1-9]\\d{5,19}");
     }
 }
