@@ -1,8 +1,6 @@
 package button_listener;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Function: Bind a listener event to the button
