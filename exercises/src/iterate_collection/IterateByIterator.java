@@ -1,4 +1,4 @@
-package traverse_collection;
+package iterate_collection;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.Iterator;
  * Author: ShenJiaFa
  * Since: 2022/4/1-20:22
  */
-public class IterateCollection {
+public class IterateByIterator {
     public static void main(String[] args) {
 
         // Create a collection and prefab data
