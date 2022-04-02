@@ -25,10 +25,12 @@ public class FormatOutput {
      */
     public static String toString(int[] array) {
 
+        // Guard statement
         if (Objects.equals(array, null)) {
             return null;
         }
 
+        // Start build
         StringBuilder sb = new StringBuilder("[");
         for (int i = 0; i < array.length; i++) {
             sb.append(array[i]).append(i == array.length - 1 ? "" : ",");
@@ -36,5 +38,6 @@ public class FormatOutput {
         sb.append("]");
 
         return sb.toString();
+
     }
 }
