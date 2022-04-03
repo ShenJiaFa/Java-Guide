@@ -3,8 +3,8 @@ package create_singleton;
 /**
  * Function: Lazy Singleton Pattern
  *
- * Author: ShenJiaFa
- * Since: 2022/3/19-20:05
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class LazySingleton {
 

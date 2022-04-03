@@ -2,9 +2,9 @@ package computer_simulation;
 
 /**
  * Function:
- * <p>
- * Author: ShenJiaFa
- * Since: 2022/3/23-22:33
+ *
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class Mouse implements USB{
 

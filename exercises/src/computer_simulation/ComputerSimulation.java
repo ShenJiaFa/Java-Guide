@@ -3,8 +3,8 @@ package computer_simulation;
 /**
  * Function: Computer Simulation
  *
- * Author: ShenJiaFa
- * Since: 2022/3/23-23:04
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class ComputerSimulation {
 

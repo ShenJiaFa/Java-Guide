@@ -3,8 +3,8 @@ package judge_prime_number;
 /**
  * Function: Judge whether a number is prime
  *
- * Author: ShenJiaFa
- * Since: 2022/3/13-12:53
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class JudgePrimeNumber {
     public static void main(String[] args) {

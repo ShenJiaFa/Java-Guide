@@ -7,8 +7,8 @@ import java.util.Iterator;
 /**
  * Function: Iterate collection with iterator
  *
- * Author: ShenJiaFa
- * Since: 2022/4/1-20:22
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class IterateByIterator {
     public static void main(String[] args) {

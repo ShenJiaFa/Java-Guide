@@ -5,9 +5,9 @@ import java.util.Collection;
 
 /**
  * Function: Show film
- * <p>
- * Author: ShenJiaFa
- * Since: 2022/4/1-21:39
+ *
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class ShowFilm {
     public static void main(String[] args) {

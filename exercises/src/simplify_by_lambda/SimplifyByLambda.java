@@ -3,8 +3,8 @@ package simplify_by_lambda;
 /**
  * Function: Simulate swim match
  *
- * Author: ShenJiaFa
- * Since: 2022/4/1-12:19
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class SimplifyByLambda {
 

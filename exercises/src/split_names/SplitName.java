@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * Function: Extract person's name
  *
- * Author: ShenJiaFa
- * Since: 2022/3/30-22:10
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class SplitName {
     public static void main(String[] args) {

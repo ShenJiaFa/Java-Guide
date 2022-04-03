@@ -3,8 +3,8 @@ package computer_simulation;
 /**
  * Function:The Keyboard Object
  *
- * Author: ShenJiaFa
- * Since: 2022/3/23-22:34
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class Keyboard implements USB{
     /**

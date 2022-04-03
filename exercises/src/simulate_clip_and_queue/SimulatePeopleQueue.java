@@ -5,8 +5,8 @@ import java.util.LinkedList;
 /**
  * Function: Simulate people queue
  *
- * Author: ShenJiaFa
- * Since: 2022/4/2-20:43
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class SimulatePeopleQueue {
     public static void main(String[] args) {

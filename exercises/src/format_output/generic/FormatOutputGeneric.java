@@ -3,8 +3,8 @@ package format_output.generic;
 /**
  * Function: Format output generic array
  *
- * Author: ShenJiaFa
- * Since: 2022/4/2-22:20
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class FormatOutputGeneric {
 

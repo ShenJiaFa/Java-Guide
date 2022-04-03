@@ -6,8 +6,8 @@ import java.util.Comparator;
 /**
  * Function: Student descend sort
  *
- * Author: ShenJiaFa
- * Since: 2022/3/31-19:28
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class StudentSort {
     public static void main(String[] args) {

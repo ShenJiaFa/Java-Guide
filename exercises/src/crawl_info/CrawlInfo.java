@@ -7,8 +7,8 @@ import java.util.regex.Pattern;
 /**
  * Function: Simulate crawling information
  *
- * Author: ShenJiaFa
- * Since: 2022/3/30-22:25
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class CrawlInfo {
     public static void main(String[] args) {

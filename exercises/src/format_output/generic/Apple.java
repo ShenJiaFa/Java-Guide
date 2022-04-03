@@ -1,10 +1,10 @@
 package format_output.generic;
 
 /**
- * Function:
- * <p>
- * Author: ShenJiaFa
- * Since: 2022/4/2-22:51
+ * Function: Apple model
+ *
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class Apple {
     /**

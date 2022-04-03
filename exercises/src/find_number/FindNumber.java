@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * Function: Find number
  *
- * Author: ShenJiaFa
- * Since: 2022/3/31-12:25
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class FindNumber {
     public static void main(String[] args) {

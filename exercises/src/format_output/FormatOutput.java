@@ -5,8 +5,8 @@ import java.util.Objects;
 /**
  * Function: Format output array
  *
- * Author: ShenJiaFa
- * Since: 2022/3/26-16:38
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class FormatOutput {
 

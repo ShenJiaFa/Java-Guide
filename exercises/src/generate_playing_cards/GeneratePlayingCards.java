@@ -6,8 +6,8 @@ import java.util.List;
 /**
  * Function: generate the only set of playing cards (including suits)
  *
- * Author: ShenJiaFa
- * Since: 2022/3/19-18:59
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class GeneratePlayingCards {
     /**

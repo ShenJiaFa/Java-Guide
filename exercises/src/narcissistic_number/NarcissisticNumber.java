@@ -3,8 +3,8 @@ package narcissistic_number;
 /**
  * Function: Find narcissistic number
  *
- * Author: shenjiafa
- * Since: 2022/3/13-11:18
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class NarcissisticNumber {
     public static void main(String[] args) {

@@ -5,8 +5,8 @@ import javax.swing.*;
 /**
  * Function: Bind a listener event to the button
  *
- * Author: ShenJiaFa
- * Since: 2022/3/25-22:18
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class ButtonListener {
 

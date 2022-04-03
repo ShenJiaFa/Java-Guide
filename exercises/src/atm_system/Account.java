@@ -3,8 +3,8 @@ package atm_system;
 /**
  * Function: Create an account class to hold user information
  *
- * Author: ShenJiaFa
- * Since: 2022/3/13-15:55
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class Account {
     /**

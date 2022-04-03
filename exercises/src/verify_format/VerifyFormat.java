@@ -3,8 +3,8 @@ package verify_format;
 /**
  * Function: Format validation using regular expressions
  *
- * Author: ShenJiaFa
- * Since: 2022/3/28-22:32
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class VerifyFormat {
     public static void main(String[] args) {

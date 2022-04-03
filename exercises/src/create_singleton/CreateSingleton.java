@@ -3,8 +3,8 @@ package create_singleton;
 /**
  * Function: Runner class
  *
- * Author: ShenJiaFa
- * Since: 2022/3/19-20:09
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class CreateSingleton {
     public static void main(String[] args) {

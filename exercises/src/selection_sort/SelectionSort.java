@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 /**
  * Function: Selection Sort
- * <p>
- * Author: ShenJiaFa
- * Since: 2022/3/31-20:15
+ *
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class SelectionSort {
     public static void main(String[] args) {

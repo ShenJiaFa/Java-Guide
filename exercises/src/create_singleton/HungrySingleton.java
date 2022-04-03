@@ -3,8 +3,8 @@ package create_singleton;
 /**
  * Function: Hungry Singleton Pattern
  *
- * Author: ShenJiaFa
- * Since: 2022/3/19-20:04
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class HungrySingleton {
 

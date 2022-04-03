@@ -3,8 +3,8 @@ package airline_ticket;
 /**
  * Function: Calculate the ticket price
  *
- * Author: ShenJiaFa
- * Since: 2022/3/13-12:43
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class AirLineTicket {
     public static void main(String[] args) {

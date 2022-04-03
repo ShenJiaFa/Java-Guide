@@ -3,8 +3,8 @@ package show_film;
 /**
  * Function: Film model class
  *
- * Author: ShenJiaFa
- * Since: 2022/4/1-21:49
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class Film {
 

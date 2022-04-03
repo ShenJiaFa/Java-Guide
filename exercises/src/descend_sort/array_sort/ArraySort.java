@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 /**
  * Function: Array descend sort
- * <p>
- * Author: ShenJiaFa
- * Since: 2022/3/31-19:03
+ *
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class ArraySort {
     public static void main(String[] args) {

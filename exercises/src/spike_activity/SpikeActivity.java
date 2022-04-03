@@ -5,9 +5,9 @@ import java.text.SimpleDateFormat;
 
 /**
  * Function: Judge whether the spike was successful
- * <p>
- * Author: ShenJiaFa
- * Since: 2022/3/26-21:43
+ *
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class SpikeActivity {
     public static void main(String[] args) throws ParseException {

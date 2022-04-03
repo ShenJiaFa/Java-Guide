@@ -3,8 +3,8 @@ package binary_search;
 /**
  * Function: Binary search
  *
- * Author: ShenJiaFa
- * Since: 2022/3/31-21:23
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class BinarySearch {
     public static void main(String[] args) {

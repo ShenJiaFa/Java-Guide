@@ -3,8 +3,8 @@ package paper_fold;
 /**
  * Function: Calculate the fold times
  *
- * Author: ShenJiaFa
- * Since: 2022/3/13-12:07
+ * @author: ShenJiaFa
+ * @since: 2022/4/3
  */
 public class PaperFold {
     public static void main(String[] args) {
