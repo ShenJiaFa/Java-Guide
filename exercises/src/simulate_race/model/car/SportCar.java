@@ -1,6 +1,7 @@
 package simulate_race.model.car;
 
 import simulate_race.model.car.base.Car;
+import simulate_race.util.SpeedUtil;
 
 import static simulate_race.constant.SpeedKey.*;
 
@@ -12,22 +13,33 @@ import static simulate_race.constant.SpeedKey.*;
  */
 public class SportCar extends Car {
 
+    /**
+     * The function of sport car
+     */
     @Override
     public void function() {
         super.setFlatSpeed(super.getFlatSpeed() * 1.5);
     }
 
-    public SportCar(){
+    public SportCar() {
         super();
     }
 
-    public SportCar(String brand, String model, double flatSpeed, double sandSpeed, double mountainSpeed){
-        super(brand, model, flatSpeed, sandSpeed,mountainSpeed);
+    public SportCar(String brand, String model, String driver, double flatSpeed, double sandSpeed, double mountainSpeed) {
+        super(brand, model, driver, flatSpeed, sandSpeed, mountainSpeed);
         function();
     }
 
-    public static SportCar getSportCar(String brand, String model){
-        return new SportCar(brand,model,SPORT_CAR_FLAT_SPEED,SPORT_CAR_SAND_SPEED,SPORT_CAR_MOUNTAIN_SPEED);
+    /**
+     * Get car sport car instance
+     * @param brand Brand
+     * @param model Model
+     * @param driver Driver
+     * @return SportCar instance
+     */
+    public static SportCar getSportCar(String brand, String model, String driver) {
+        double[] speeds = SpeedUtil.generateSpeed(SPORT_CAR_FLAT_SPEED, SPORT_CAR_SAND_SPEED, SPORT_CAR_MOUNTAIN_SPEED);
+        return new SportCar(brand, model, driver, speeds[0], speeds[1], speeds[2]);
     }
 
 }

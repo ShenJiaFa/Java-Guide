@@ -1,7 +1,7 @@
 package simulate_race.model.road;
 
 /**
- * Function:
+ * Function: Road model
  *
  * @author: ShenJiaFa
  * @since: 2022/4/3

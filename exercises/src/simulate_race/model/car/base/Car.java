@@ -1,7 +1,7 @@
 package simulate_race.model.car.base;
 
 /**
- * Function:
+ * Function: Car model
  *
  * @author: ShenJiaFa
  * @since: 2022/4/3
@@ -19,6 +19,11 @@ public abstract class Car implements IFunction {
     private String model;
 
     /**
+     * The driver of car
+     */
+    private String driver;
+
+    /**
      * The flat speed of car
      */
     private double flatSpeed;
@@ -32,6 +37,11 @@ public abstract class Car implements IFunction {
      * The mountain speed of car
      */
     private double mountainSpeed;
+
+    /**
+     * The total time of race
+     */
+    private double totalTime;
 
     public String getBrand() {
         return brand;
@@ -73,9 +83,26 @@ public abstract class Car implements IFunction {
         this.mountainSpeed = mountainSpeed;
     }
 
-    public Car(String brand, String model, double flatSpeed, double sandSpeed, double mountainSpeed) {
+    public String getDriver() {
+        return driver;
+    }
+
+    public void setDriver(String driver) {
+        this.driver = driver;
+    }
+
+    public double getTotalTime() {
+        return totalTime;
+    }
+
+    public void setTotalTime(double totalTime) {
+        this.totalTime = totalTime;
+    }
+
+    public Car(String brand, String model, String driver, double flatSpeed, double sandSpeed, double mountainSpeed) {
         this.brand = brand;
         this.model = model;
+        this.driver = driver;
         this.flatSpeed = flatSpeed;
         this.sandSpeed = sandSpeed;
         this.mountainSpeed = mountainSpeed;
@@ -89,9 +116,11 @@ public abstract class Car implements IFunction {
         return "Car{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
+                ", driver='" + driver + '\'' +
                 ", flatSpeed=" + flatSpeed +
                 ", sandSpeed=" + sandSpeed +
                 ", mountainSpeed=" + mountainSpeed +
+                ", totalTime=" + totalTime +
                 '}';
     }
 }
