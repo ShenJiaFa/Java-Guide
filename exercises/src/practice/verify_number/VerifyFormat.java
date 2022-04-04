@@ -1,4 +1,4 @@
-package practice.verify_format;
+package practice.verify_number;
 
 /**
  * Function: Format validation using regular expressions

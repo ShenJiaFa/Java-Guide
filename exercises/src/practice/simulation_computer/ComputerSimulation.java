@@ -1,4 +1,4 @@
-package practice.computer_simulation;
+package practice.simulation_computer;
 
 /**
  * Function: Computer Simulation

@@ -1,7 +1,7 @@
 # Demand
 
-Requirements: in actual development, we often encounter some tool classes used by arrays. Please write an array tool
-class as follows: ArraysUtils;
+In actual development, we often encounter some tool classes used by arrays. Please write an array tool class as follows:
+ArraysUtils;
 
 1. We know that when an array object is directly output, it is the address of the output object, and many places in the
    project need to return the contents of the array. Please provide a tool class method toString in ArraysUtils to

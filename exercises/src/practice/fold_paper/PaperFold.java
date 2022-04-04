@@ -1,4 +1,4 @@
-package practice.paper_fold;
+package practice.fold_paper;
 
 /**
  * Function: Calculate the fold times

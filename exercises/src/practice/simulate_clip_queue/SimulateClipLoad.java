@@ -1,4 +1,4 @@
-package practice.simulate_clip_and_queue;
+package practice.simulate_clip_queue;
 
 import java.util.LinkedList;
 

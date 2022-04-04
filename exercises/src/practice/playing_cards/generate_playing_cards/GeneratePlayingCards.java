@@ -1,4 +1,4 @@
-package practice.generate_playing_cards;
+package practice.playing_cards.generate_playing_cards;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,10 +21,10 @@ public class GeneratePlayingCards {
     static {
         String card;
         String[] values = {"3", "4", "5", "6", "7", "8", "9", "10", "j", "q", "k", "A", "2"};
-        String[] suits = {"♥", "♠", "◆", "♣"};
+        String[] color = {"♥", "♠", "◆", "♣"};
         for (int i = 0; i < values.length; i++) {
-            for (int j = 0; j < suits.length; j++) {
-                card = "[" + suits[j] + values[i] + "]";
+            for (int j = 0; j < color.length; j++) {
+                card = "[" + color[j] + values[i] + "]";
                 cards.add(card);
             }
         }

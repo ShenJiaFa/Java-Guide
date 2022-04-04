@@ -1,4 +1,4 @@
-package theory.collections_util_operation.add_elements_to_list_in_batch;
+package theory.collections_util_operation.add_elements_list_batch;
 
 import java.util.ArrayList;
 import java.util.Collections;
