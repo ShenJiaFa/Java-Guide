@@ -1,4 +1,4 @@
-package theory.grammar.array.arrays_util.array_sort.student_array_sort;
+package theory.grammar.array.arrays_util.array_util_sort.student_array_sort;
 
 import java.util.Arrays;
 import java.util.Comparator;

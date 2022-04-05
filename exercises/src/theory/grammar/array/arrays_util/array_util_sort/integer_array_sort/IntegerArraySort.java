@@ -1,4 +1,4 @@
-package theory.grammar.array.arrays_util.array_sort.integer_array_sort;
+package theory.grammar.array.arrays_util.array_util_sort.integer_array_sort;
 
 import java.util.Arrays;
 

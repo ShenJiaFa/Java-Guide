@@ -1,3 +1,0 @@
-# Demand
-
-Variadic array summation;
