@@ -1,4 +1,4 @@
-# Classic-JavaSE-Exercises
+# Java-Guide
 
 This is a collection of classic JavaSE exercises,consist two parts **: theory** and **practice**;
 
