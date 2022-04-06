@@ -10,13 +10,13 @@ public class PrintGeneric {
 
     public static void main(String[] args) {
 
-        // Prefabricate non-custom arrays
+        // Create operational data
         Integer[] intArray = {1, 2, 3};
         Double[] doubleArray = {1.1, 2.2, 3.3};
         Boolean[] boolArray = {true, false, true};
         String[] strArray = {"Jim", "Tom", "Bill"};
 
-        // Prefabricate custom array
+        // Create operational data
         Apple[] appleArray = {new Apple("red apple"), new Apple("green apple"), new Apple("yellow apple")};
 
 

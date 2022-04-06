@@ -12,7 +12,7 @@ import java.util.Collection;
 public class ShowFilm {
     public static void main(String[] args) {
 
-        // Create a collection and prefabricate data
+        // Create a collection and create operational data
         Collection<Film> films = new ArrayList<>();
         films.add(new Film("The Shaw Shank Redemption", 9.2, "Tim Robbins,Morgan Freeman"));
         films.add(new Film("The Godfather", 9.2, "Marlon Brando,Al Pacino"));

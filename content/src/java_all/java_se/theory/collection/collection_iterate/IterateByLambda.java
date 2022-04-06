@@ -12,7 +12,7 @@ import java.util.Collection;
 public class IterateByLambda {
     public static void main(String[] args) {
 
-        // Create a collection and prefabricate data
+        // Create a collection and create operational data
         Collection<String> collectionList = new ArrayList<>();
         collectionList.add("曹操");
         collectionList.add("刘备");

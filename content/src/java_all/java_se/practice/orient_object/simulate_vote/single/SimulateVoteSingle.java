@@ -13,7 +13,7 @@ import java.util.Random;
 public class SimulateVoteSingle {
     public static void main(String[] args) {
 
-        // Prefabricate data for 80 students
+        // Create operational data
         Character[] characters = {'A', 'B', 'C', 'D'};
         StringBuilder sb = new StringBuilder();
         Random rand = new Random();

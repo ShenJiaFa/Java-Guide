@@ -13,7 +13,7 @@ import java.util.Iterator;
 public class IterateByIterator {
     public static void main(String[] args) {
 
-        // Create a collection and prefabricate data
+        // Create a collection and create operational data
         Collection<String> collectionList = new ArrayList<>();
         collectionList.add("郭富城");
         collectionList.add("刘德华");
