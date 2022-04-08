@@ -31,6 +31,5 @@ public class ObtainStream {
         Stream<String> namesStreamA = Arrays.stream(names);
         Stream<String> namesStreamB = Stream.of(names);
 
-
     }
 }

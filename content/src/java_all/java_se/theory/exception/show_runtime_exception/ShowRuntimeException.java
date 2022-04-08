@@ -1,4 +1,4 @@
-package java_all.java_se.theory.exception;
+package java_all.java_se.theory.exception.show_runtime_exception;
 
 /**
  * Function:
