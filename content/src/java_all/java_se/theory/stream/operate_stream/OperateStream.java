@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 /**
- * Function:
+ * Function: Operate stream
  *
  * @author: ShenJiaFa
  * @since: 2022/4/6

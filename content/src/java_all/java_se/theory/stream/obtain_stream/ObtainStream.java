@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Stream;
 
 /**
- * Function:
+ * Function: Obtain stream
  *
  * @author: ShenJiaFa
  * @since: 2022/4/5
