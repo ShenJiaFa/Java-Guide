@@ -75,6 +75,12 @@ public class ATMSystem {
         }
     }
 
+    /**
+     * User options interface
+     * @param account User account
+     * @param accounts Accounts
+     * @param sc Scanner
+     */
     private static void userOption(Account account, List<Account> accounts, Scanner sc) {
         while (true) {
             System.out.println("===========Options===========");
