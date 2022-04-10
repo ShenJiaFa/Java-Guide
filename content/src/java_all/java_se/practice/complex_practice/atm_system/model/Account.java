@@ -1,4 +1,4 @@
-package java_all.java_se.practice.complex_practice.atm_system;
+package java_all.java_se.practice.complex_practice.atm_system.model;
 
 /**
  * Function: Create an account class to hold user information

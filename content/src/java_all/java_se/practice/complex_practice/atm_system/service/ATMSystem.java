@@ -1,4 +1,6 @@
-package java_all.java_se.practice.complex_practice.atm_system;
+package java_all.java_se.practice.complex_practice.atm_system.service;
+
+import java_all.java_se.practice.complex_practice.atm_system.model.Account;
 
 import java.util.ArrayList;
 import java.util.List;
