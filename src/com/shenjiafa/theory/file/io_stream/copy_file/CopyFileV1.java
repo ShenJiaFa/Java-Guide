@@ -10,25 +10,25 @@ import java.io.*;
  */
 public class CopyFileV1 {
     public static void main(String[] args) throws IOException {
-        InputStream is1 = null;
-        OutputStream os1 = null;
+        InputStream is = null;
+        OutputStream os = null;
         try {
-            is1 = new FileInputStream("C:\\MyCode\\resource\\file\\photo.jpg");
-            os1 = new FileOutputStream("C:\\MyCode\\resource\\file\\find\\photo.jpg");
+            is = new FileInputStream("C:\\MyCode\\resource\\file\\photo.jpg");
+            os = new FileOutputStream("C:\\MyCode\\resource\\file\\find\\photo.jpg");
             byte[] buffer = new byte[1024];
             int len;
-            while ((len = is1.read(buffer)) != -1) {
-                os1.write(buffer, 0, len);
+            while ((len = is.read(buffer)) != -1) {
+                os.write(buffer, 0, len);
             }
             System.out.println("复制完成!");
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (is1 != null) {
-                is1.close();
+            if (is != null) {
+                is.close();
             }
-            if (os1 != null) {
-                os1.close();
+            if (os != null) {
+                os.close();
             }
         }
     }
