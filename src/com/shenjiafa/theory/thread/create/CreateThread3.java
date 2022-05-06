@@ -1,7 +1,7 @@
-package com.shenjiafa.theory.thread;
+package com.shenjiafa.theory.thread.create;
 
 /**
- * Function:
+ * Function: Create thread by create anonymous inner class
  *
  * @author ShenJiaFa
  * @since 2022/5/5

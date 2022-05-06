@@ -1,4 +1,4 @@
-package com.shenjiafa.theory.thread;
+package com.shenjiafa.theory.thread.create;
 
 /**
  * Function:

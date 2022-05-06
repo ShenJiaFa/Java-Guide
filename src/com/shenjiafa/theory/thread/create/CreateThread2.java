@@ -1,15 +1,16 @@
-package com.shenjiafa.theory.thread;
+package com.shenjiafa.theory.thread.create;
 
 /**
- * Function: Create thread by extends Thread
+ * Function: Create thread by implements runnable
  *
  * @author ShenJiaFa
  * @since 2022/5/5
  */
-public class CreateThread1 {
+public class CreateThread2 {
     public static void main(String[] args) {
 
-        Thread thread =new MyThread();
+        Runnable target = new MyRunnable();
+        Thread thread = new Thread(target);
         thread.start();
 
         for (int i = 0; i < 5; i++) {
