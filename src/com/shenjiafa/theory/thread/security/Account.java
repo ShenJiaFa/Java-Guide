@@ -1,5 +1,8 @@
 package com.shenjiafa.theory.thread.security;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * Function: Account model class
  *
@@ -16,6 +19,11 @@ public class Account {
      * Account balance
      */
     private double balance;
+
+    /**
+     * Lock
+     */
+    private Lock lock=new ReentrantLock();
 
     public Account() {
     }
@@ -50,7 +58,9 @@ public class Account {
 
         String name = Thread.currentThread().getName();
 
-        synchronized (this) {
+        lock.lock();
+
+        try {
             if (this.balance >= money) {
                 System.out.println(name + "withdraw" + money + "yuan;");
                 this.balance -= money;
@@ -58,6 +68,8 @@ public class Account {
             } else {
                 System.out.println(name + "'s balance is not enough!");
             }
+        } finally {
+            lock.unlock();
         }
 
     }

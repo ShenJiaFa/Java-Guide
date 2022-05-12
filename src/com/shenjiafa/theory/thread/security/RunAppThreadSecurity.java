@@ -6,7 +6,7 @@ package com.shenjiafa.theory.thread.security;
  * @author ShenJiaFa
  * @since 2022/5/6
  */
-public class RunApp {
+public class RunAppThreadSecurity {
     public static void main(String[] args) {
 
         Account acc=new Account("ACC-123",10000);

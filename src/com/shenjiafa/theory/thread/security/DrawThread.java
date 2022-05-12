@@ -15,6 +15,9 @@ public class DrawThread extends Thread{
         this.acc=acc;
     }
 
+    public DrawThread() {
+    }
+
     @Override
     public void run() {
         acc.withDraw(10000);
