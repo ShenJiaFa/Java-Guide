@@ -13,7 +13,13 @@ public class RunThreadPool {
 
         ExecutorService executor = new ThreadPoolExecutor(3, 5, 6, TimeUnit.SECONDS, new ArrayBlockingQueue<>(5), Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());
         Runnable target = new MyRunnable();
-
+        executor.execute(target);
+        executor.execute(target);
+        executor.execute(target);
+        executor.execute(target);
+        executor.execute(target);
+        executor.execute(target);
+        executor.execute(target);
         executor.execute(target);
         executor.execute(target);
         executor.execute(target);
