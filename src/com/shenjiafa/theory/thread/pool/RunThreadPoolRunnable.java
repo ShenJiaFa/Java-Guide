@@ -8,7 +8,7 @@ import java.util.concurrent.*;
  * @author ShenJiaFa
  * @since 2022/5/12
  */
-public class RunThreadPool {
+public class RunThreadPoolRunnable {
     public static void main(String[] args) {
 
         ExecutorService executor = new ThreadPoolExecutor(3, 5, 6, TimeUnit.SECONDS, new ArrayBlockingQueue<>(5), Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());
