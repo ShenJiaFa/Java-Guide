@@ -1,4 +1,4 @@
-package com.shenjiafa.theory.net;
+package com.shenjiafa.theory.net.udp;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

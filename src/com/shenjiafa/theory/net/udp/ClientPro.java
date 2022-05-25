@@ -1,4 +1,4 @@
-package com.shenjiafa.theory.net;
+package com.shenjiafa.theory.net.udp;
 
 import java.io.IOException;
 import java.net.*;
@@ -16,7 +16,7 @@ public class ClientPro {
 
         System.out.println("ClientPro start !");
         Scanner scanner=new Scanner(System.in);
-        DatagramSocket socket=new DatagramSocket(6666);
+        DatagramSocket socket=new DatagramSocket(7777);
 
         while (true) {
             System.out.println("Please enter the message you want to send:");
