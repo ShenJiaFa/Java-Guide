@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Student Description-->
+<student>
+    <name>Jim Green</name>
+    <sex>Male</sex>
+    <age>30</age>
+    <otherInfos>
+        <Profession>Programmer</Profession>
+        <hobby>Football</hobby>
+        <country>China</country>
+        <Weight><![CDATA[139<weight<141]]></Weight>
+    </otherInfos>
+</student>

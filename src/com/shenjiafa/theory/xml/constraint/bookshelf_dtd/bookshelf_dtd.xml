@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE bookshelf SYSTEM "C:\MyCode\Java-Guide\src\com\shenjiafa\theory\xml\constraint\bookshelf_dtd\bookshelf.dtd">
+<bookshelf>
+    <book>
+        <bookName>Java Guide 1.0</bookName>
+        <author>James</author>
+        <price>18</price>
+    </book>
+    <book>
+        <bookName>Java Guide 2.0</bookName>
+        <author>Jack</author>
+        <price>20</price>
+    </book>
+    <book>
+        <bookName>Java Guide 3.0</bookName>
+        <author>Jim</author>
+        <price>22</price>
+    </book>
+</bookshelf>

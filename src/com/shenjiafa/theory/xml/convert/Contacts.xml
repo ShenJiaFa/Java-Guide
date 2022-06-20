@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+    <contact id="1" vip="true">
+        <id>10001</id>
+        <name>James</name>
+        <vip>18</vip>
+        <gender>Male</gender>
+    </contact>
+    <contact id="2" vip="false">
+        <id>10002</id>
+        <name>Jack</name>
+        <vip>20</vip>
+        <gender>Male</gender>
+    </contact>
+    <contact id="3" vip="true">
+        <id>10003</id>
+        <name>Lily</name>
+        <vip>22</vip>
+        <gender>Female</gender>
+    </contact>
+</contacts>

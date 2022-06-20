@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="shenjiafa"
+        elementFormDefault="qualified">
+    <element name="bookshelf">
+        <complexType>
+            <sequence maxOccurs="unbounded">
+                <element name="book">
+                    <complexType>
+                        <sequence>
+                            <element name="bookName" type="string"/>
+                            <element name="author" type="string"/>
+                            <element name="price" type="double"/>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

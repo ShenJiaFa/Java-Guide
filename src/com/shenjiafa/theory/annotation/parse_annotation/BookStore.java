@@ -6,9 +6,9 @@ package com.shenjiafa.theory.annotation.parse_annotation;
  * @author ShenJiaFa
  * @since 2022/6/1
  */
-@MyBook(value = "Java Guide V1",price = 99.9,authors = {"JiaFaShen"})
+@MyBook(value = "Java Guide V1",price = 99.9,authors = {"ShenJiaFa"})
 public class BookStore {
-    @MyBook(value = "Java Guide V2",price = 199.9,authors = {"JiaFaShen","newer"})
+    @MyBook(value = "Java Guide V2",price = 199.9,authors = {"ShenJiaFa","newer"})
     public void bookStore(){
     }
 }

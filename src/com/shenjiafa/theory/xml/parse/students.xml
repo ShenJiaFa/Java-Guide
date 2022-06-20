@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <class id="1" vip="true">
+        <student>
+            <name>James</name>
+            <age>18</age>
+            <sex>Male</sex>
+        </student>
+        <student>
+            <name>Jack</name>
+            <age>20</age>
+            <sex>Male</sex>
+        </student>
+    </class>
+    <class id="2" vip="false">
+        <student>
+            <name>Lily</name>
+            <age>19</age>
+            <sex>女</sex>
+        </student>
+        <student>
+            <name>Bill</name>
+            <age>21</age>
+            <sex>Male</sex>
+        </student>
+        <student>
+            <name>Eric</name>
+            <age>23</age>
+            <sex>Male</sex>
+        </student>
+    </class>
+    <grade level="3" vip="true">
+        <student>
+            <name>  Tom  </name>
+            <age>25</age>
+            <sex>Male</sex>
+        </student>
+    </grade>
+</students>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bookshelf xmlns="shenjiafa"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="shenjiafa  bookshelf.xsd">
+    <book>
+        <bookName>Java Guide 1.0</bookName>
+        <author>James</author>
+        <price>18.8</price>
+    </book>
+    <book>
+        <bookName>Java Guide 2.0</bookName>
+        <author>Jack</author>
+        <price>20.8</price>
+    </book>
+    <book>
+        <bookName>Java Guide 3.0</bookName>
+        <author>Jim</author>
+        <price>22.8</price>
+    </book>
+</bookshelf>
