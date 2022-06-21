@@ -18,6 +18,11 @@ public class Contact {
     private String name;
 
     /**
+     * Contact age
+     */
+    private int age;
+
+    /**
      * Contact vip condition
      */
     private boolean vip;
@@ -33,6 +38,14 @@ public class Contact {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public int getId() {
@@ -74,6 +87,7 @@ public class Contact {
         return "Contact{" +
                 "name='" + name + '\'' +
                 ", id=" + id +
+                ", age=" + age +
                 ", vip=" + vip +
                 ", gender=" + gender +
                 '}';

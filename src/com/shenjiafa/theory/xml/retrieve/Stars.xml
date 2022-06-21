@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stars>
+    <star id="1" vip="true">
+        <id>1</id>
+        <name>James</name>
+        <age>18</age>
+        <gender>Male</gender>
+    </star>
+    <star id="2" vip="false">
+        <id>2</id>
+        <name>Jack</name>
+        <age>20</age>
+        <gender>Male</gender>
+    </star>
+    <star id="3" vip="true">
+        <id>3</id>
+        <name>Lily</name>
+        <age>22</age>
+        <gender>Female</gender>
+    </star>
+    <fan id="10001" level="7">
+        <id>10001</id>
+        <name>Lily</name>
+        <age>16</age>
+        <gender>Female</gender>
+    </fan>
+    <fan id="10002" level="6">
+        <id>10002</id>
+        <name>Lucy</name>
+        <age>17</age>
+        <gender>Female</gender>
+    </fan>
+</stars>
