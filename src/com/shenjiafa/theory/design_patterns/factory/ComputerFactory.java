@@ -23,7 +23,7 @@ public class ComputerFactory {
             case "Mac":
                 return new Mac("MacBook Pro 2022", 19999.0);
             case "PC":
-                return new PC("ThinkPad T14 2022", 15999.0);
+                return new PC("Surface Pro 2022", 15999.0);
             default:
                 return null;
         }

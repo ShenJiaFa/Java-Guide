@@ -10,8 +10,11 @@ import com.shenjiafa.theory.design_patterns.factory.base.Computer;
  */
 public class RunFactory {
     public static void main(String[] args) {
-        Computer c=ComputerFactory.getComputer("Mac");
-        c.start();
 
+        Computer imac=ComputerFactory.getComputer("Mac");
+        Computer surface=ComputerFactory.getComputer("PC");
+
+        imac.start();
+        surface.start();
     }
 }
