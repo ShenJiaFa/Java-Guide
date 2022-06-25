@@ -1,6 +1,6 @@
 package com.shenjiafa.theory.annotation.parse_annotation;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
