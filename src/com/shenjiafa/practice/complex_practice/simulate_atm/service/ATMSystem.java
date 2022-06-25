@@ -1,6 +1,6 @@
-package com.shenjiafa.practice.complex_practice.atm_system.service;
+package com.shenjiafa.practice.complex_practice.simulate_atm.service;
 
-import com.shenjiafa.practice.complex_practice.atm_system.model.Account;
+import com.shenjiafa.practice.complex_practice.simulate_atm.model.Account;
 
 import java.util.ArrayList;
 import java.util.List;

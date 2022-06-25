@@ -1,4 +1,4 @@
-package com.shenjiafa.practice.complex_practice.atm_system.model;
+package com.shenjiafa.practice.complex_practice.simulate_atm.model;
 
 /**
  * Function: Create an account class to hold user information
