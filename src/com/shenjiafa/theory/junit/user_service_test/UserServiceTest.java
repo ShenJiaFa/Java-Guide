@@ -1,4 +1,4 @@
-package com.shenjiafa.theory.junit;
+package com.shenjiafa.theory.junit.user_service_test;
 
 import org.junit.*;
 
@@ -8,7 +8,7 @@ import org.junit.*;
  * @author ShenJiaFa
  * @since 2022/5/26
  */
-public class TestUserService {
+public class UserServiceTest {
 
     @Before
     public void before(){

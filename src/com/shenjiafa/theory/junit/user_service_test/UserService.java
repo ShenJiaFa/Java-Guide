@@ -1,4 +1,4 @@
-package com.shenjiafa.theory.junit;
+package com.shenjiafa.theory.junit.user_service_test;
 
 /**
  * Function: Simulate some business code
