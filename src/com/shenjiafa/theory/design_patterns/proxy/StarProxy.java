@@ -10,7 +10,7 @@ import java.lang.reflect.Proxy;
  * @author ShenJiaFa
  * @since 2022/6/19
  */
-public class StarAgentProxy {
+public class StarProxy {
 
     public static Skill getAgentProxy(Star obj) {
 

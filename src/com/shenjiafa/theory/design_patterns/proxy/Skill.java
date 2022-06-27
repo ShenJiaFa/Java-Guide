@@ -9,4 +9,5 @@ package com.shenjiafa.theory.design_patterns.proxy;
 public interface Skill {
     void sing();
     void dance();
+    void speak();
 }

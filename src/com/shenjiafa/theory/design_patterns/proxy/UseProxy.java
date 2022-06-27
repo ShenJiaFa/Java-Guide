@@ -10,9 +10,10 @@ public class UseProxy {
     public static void main(String[] args) {
 
         Star jack = new Star("Jack");
-        Skill starAgent =StarAgentProxy.getAgentProxy(jack);
+        Skill starAgent = StarProxy.getAgentProxy(jack);
         starAgent.dance();
         starAgent.sing();
+        starAgent.speak();
 
     }
 }

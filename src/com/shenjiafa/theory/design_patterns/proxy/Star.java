@@ -26,4 +26,9 @@ public class Star implements Skill {
     public void dance() {
         System.out.println(name + " is dancing!");
     }
+
+    @Override
+    public void speak() {
+        System.out.println(name + " is speaking!");
+    }
 }
