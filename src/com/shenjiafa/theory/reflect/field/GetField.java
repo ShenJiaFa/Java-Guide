@@ -12,13 +12,29 @@ import java.lang.reflect.Field;
  */
 public class GetField {
 
+    /**
+     * Get all public fields
+     */
     @Test
-    public void getDeclaredFields(){
+    public void getFields() {
+
+        Class studentClass = Student.class;
+        Field[] fields = studentClass.getFields();
+        for (Field field : fields) {
+            System.out.println(field.getName() + " : " + field.getType());
+        }
+    }
+
+    /**
+     * Get all fields whether public or private
+     */
+    @Test
+    public void getDeclaredFields() {
 
         Class studentClass = Student.class;
         Field[] fields = studentClass.getDeclaredFields();
         for (Field field : fields) {
-            System.out.println(field.getName()+" : "+field.getType());
+            System.out.println(field.getName() + " : " + field.getType());
         }
     }
 
@@ -27,11 +43,11 @@ public class GetField {
 
         Class studentClass = Student.class;
         Field ageField = studentClass.getDeclaredField("age");
-        System.out.println(ageField.getName()+"==>"+ageField.getType());
+        System.out.println(ageField.getName() + "==>" + ageField.getType());
 
-        Student student=new Student();
+        Student student = new Student();
         ageField.setAccessible(true);
-        ageField.set(student,18);
+        ageField.set(student, 18);
 
         System.out.println(student);
 

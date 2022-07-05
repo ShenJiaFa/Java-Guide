@@ -25,7 +25,7 @@ public class Student {
     /**
      * Country name
      */
-    private static final String countryName = "china";
+    public static final String countryName = "china";
 
     public Student() {
     }
