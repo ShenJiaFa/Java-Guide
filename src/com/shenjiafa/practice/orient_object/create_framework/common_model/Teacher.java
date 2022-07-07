@@ -1,4 +1,4 @@
-package com.shenjiafa.practice.orient_object.create_framework.model;
+package com.shenjiafa.practice.orient_object.create_framework.common_model;
 
 /**
  * Function: Teacher model
@@ -54,7 +54,7 @@ public class Teacher {
      * @param schoolName Teacher school name
      */
     public void teacherSelfIntroduction(String name, int age, String schoolName) {
-        System.out.println("My name is " + name + ",I am " + age + " years old and my school is " + schoolName);
+        System.out.println("My name is " + name + ",I am " + age + " years old and my school is " + schoolName+",I am a teacher.");
     }
 
     public Teacher() {

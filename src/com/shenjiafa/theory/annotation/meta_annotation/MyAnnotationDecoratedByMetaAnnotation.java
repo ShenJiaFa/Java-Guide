@@ -1,9 +1,13 @@
 package com.shenjiafa.theory.annotation.meta_annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
-@Target(value = {ElementType.TYPE,ElementType.METHOD})
+/**
+ * Show annotation decorated by meta-annotations
+ */
+@Target({ElementType.TYPE, ElementType.METHOD, ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Inherited
 public @interface MyAnnotationDecoratedByMetaAnnotation {
-
 }
