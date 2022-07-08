@@ -1,14 +1,14 @@
-package com.shenjiafa.practice.orient_object.create_framework.use_annotation;
+package com.shenjiafa.practice.orient_object.check_methods;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE)
+/**
+ * Determine whether the method will be abnormal
+ */
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ObjectMethod {
-    String className();
-
-    String methodName();
+public @interface Check {
 }

@@ -1,6 +1,6 @@
-package com.shenjiafa.practice.orient_object.create_framework.use_annotation;
+package com.shenjiafa.practice.orient_object.general_self_introduction.use_annotation;
 
-import com.shenjiafa.practice.orient_object.create_framework.common_model.Teacher;
+import com.shenjiafa.practice.orient_object.general_self_introduction.common_model.Teacher;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
  * @author ShenJiaFa
  * @since 2022/7/5
  */
-@ObjectMethod(className = "com.shenjiafa.practice.orient_object.create_framework.common_model.Student", methodName = "studentSelfIntroduction")
+@ObjectMethod(className = "com.shenjiafa.practice.orient_object.create_framework.common_model.Teacher", methodName = "teacherSelfIntroduction")
 public class ObjectFrameWork {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         ObjectMethod objectMethod = ObjectFrameWork.class.getAnnotation(ObjectMethod.class);

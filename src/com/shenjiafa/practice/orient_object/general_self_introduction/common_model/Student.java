@@ -1,19 +1,19 @@
-package com.shenjiafa.practice.orient_object.create_framework.common_model;
+package com.shenjiafa.practice.orient_object.general_self_introduction.common_model;
 
 /**
- * Function: Teacher model
+ * Function: Student class
  *
  * @author ShenJiaFa
- * @since 2022/7/5
+ * @since 2022/5/26
  */
-public class Teacher {
+public class Student {
     /**
-     * Teacher name
+     * Student name
      */
     private String name;
 
     /**
-     * Teacher age
+     * Student age
      */
     private int age;
 
@@ -49,18 +49,18 @@ public class Teacher {
     /**
      * Self-introduction method
      *
-     * @param name       Teacher name
-     * @param age        Teacher age
-     * @param schoolName Teacher school name
+     * @param name       Student name
+     * @param age        Student age
+     * @param schoolName Student school name
      */
-    public void teacherSelfIntroduction(String name, int age, String schoolName) {
-        System.out.println("My name is " + name + ",I am " + age + " years old and my school is " + schoolName+",I am a teacher.");
+    public void studentSelfIntroduction(String name, int age, String schoolName) {
+        System.out.println("My name is " + name + ",I am " + age + " years old and my school is " + schoolName+",I am a student.");
     }
 
-    public Teacher() {
+    public Student() {
     }
 
-    public Teacher(String name, int age, String schoolName) {
+    public Student(String name, int age, String schoolName) {
         this.name = name;
         this.age = age;
         this.schoolName = schoolName;
@@ -68,10 +68,11 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "Teacher{" +
+        return "Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", schoolName='" + schoolName + '\'' +
                 '}';
     }
+
 }

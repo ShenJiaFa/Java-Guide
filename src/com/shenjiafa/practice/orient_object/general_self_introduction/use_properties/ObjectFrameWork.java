@@ -1,6 +1,6 @@
-package com.shenjiafa.practice.orient_object.create_framework.use_properties;
+package com.shenjiafa.practice.orient_object.general_self_introduction.use_properties;
 
-import com.shenjiafa.practice.orient_object.create_framework.common_model.Teacher;
+import com.shenjiafa.practice.orient_object.general_self_introduction.common_model.Teacher;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +19,7 @@ public class ObjectFrameWork {
 
         Properties properties = new Properties();
         ClassLoader classLoader = ObjectFrameWork.class.getClassLoader();
-        InputStream is = classLoader.getResourceAsStream("com/shenjiafa/practice/orient_object/create_framework/use_properties/model.properties");
+        InputStream is = classLoader.getResourceAsStream("com/shenjiafa/practice/orient_object/general_self_introduction/use_properties/model.properties");
         properties.load(is);
 
         String className = properties.getProperty("className");
