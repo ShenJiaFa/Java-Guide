@@ -23,7 +23,7 @@ public class JdbcQuickStart {
 
         System.out.println(count);
 
-        connection.close();
         statement.close();
+        connection.close();
     }
 }
