@@ -3,10 +3,7 @@ package com.shenjiafa.practice.orient_object.user_login;
 import com.mysql.cj.util.StringUtils;
 import com.shenjiafa.theory.jdbc.simplify_jdbc.util.JdbcUtil;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Scanner;
 
 /**
@@ -35,19 +32,20 @@ public class RunUserLogin {
             return false;
         }
         Connection connection = null;
-        Statement statement = null;
+        PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            String sql = "select * from t_user_login where user_name= '" + userName + "' and user_password= '" + password + "'";
+            String sql = "select * from t_user_login where user_name= ? and user_password= ?";
             connection = JdbcUtil.getConnection();
-            statement = connection.createStatement();
-            resultSet = statement.executeQuery(sql);
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,userName);
+            preparedStatement.setString(2,password);
+            resultSet = preparedStatement.executeQuery();
             return resultSet.next();
-
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JdbcUtil.close(resultSet, statement, connection);
+            JdbcUtil.close(resultSet, preparedStatement, connection);
         }
         return false;
     }
